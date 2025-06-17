@@ -1,8 +1,8 @@
 const mongoose = require('mongoose')
 
 const personaSchema = new mongoose.Schema({
-  nombre: { type: String, required: true },
-  edad: { type: String, required: true }
+  name: { type: String, required: true },
+  age: { type: String, required: true }
 })
 
 module.exports = mongoose.model('Persona', personaSchema)
